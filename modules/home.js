@@ -7,6 +7,7 @@ async function then () {
     .then((cmd) => {
         var commands = fs.readdirSync('./commands').filter(file => file.endsWith(".js"));
         var status = 0;
+        commands.sort()
         commands.forEach((command) => {
             command = require(`../commands/${command}`)
             if (command.name == cmd.toLocaleLowerCase()) {

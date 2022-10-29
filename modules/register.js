@@ -9,7 +9,7 @@ module.exports = async () => {
         std.cin('Passworld:', true).then((passworld) => {
             std.cin('Decryptation code:', true).then(async (decryptationCode) => {
                 await mapdb.set(username, {username, passworld: security.encrypt(passworld, decryptationCode), decryptationCode})
-                require('./login.js')();
+                require('./home.js')();
             })
         })
     })

@@ -11,8 +11,6 @@ async function checkModules () {
                     //if (version != require(`../node_modules/${module}/package.json`).version) {
                         toInstall += `${module} `;
                     //}
-                } else {
-                    toInstall += `${module} `;
                 }
             })
             if (toInstall.length == 0) {

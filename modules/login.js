@@ -1,12 +1,12 @@
 const std = require('./std.js');
 const security = require('./security.js');
-const MapDB = require('@fiusdevelopment/map.db');
 const home = require('./home.js')
+const MapDB = require('@fiusdevelopment/map.db');
 const mapdb = new MapDB('credentials.db');
 const register = require('./register.js');
 
 async function login () {
-    if (mapdb.size() > 0) {        
+    //if (mapdb.size() > 0) {        
         std.cin('Username:').then((username) => {
             std.cin('Passworld:', true).then((passworld) => {
                 std.cin('Decryptation code:', true).then(async (pin) => {
@@ -29,9 +29,9 @@ async function login () {
                 })
             })
         })
-    } else {
-        register();
-    }
+    //} else {
+    //    register();
+    //}
 }
 
 module.exports = login;

@@ -1,10 +1,16 @@
 const checkWeb = require('./modules/updates.js');
-
 //std.createCin(process.stdin, process.stdout);
 checkWeb()
 .then(() => {
-    const login = require('./modules/login.js');
-    login();
+    const MapDB = require('@fiusdevelopment/map.db');
+    const cdb = new MapDB('credentials.db');
+    if (cdb.size() > 0) {
+        const login = require('./modules/login.js');
+        login();
+    } else {
+        const register = require('./modules/register.js');
+        register();
+    }
 })
 
 /*  _____     _____ ___ _   _ ____    ____                 _                                  _     ____   ___ ____  ____  
