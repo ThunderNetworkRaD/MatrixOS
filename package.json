@@ -1,0 +1,27 @@
+{
+  "name": "matrixos",
+  "version": "0.0.2",
+  "description": "A new Operating System",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fiusdevelopment/matrixos.git"
+  },
+  "author": "FIUS Development | Killer Boss Original - xxander",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "bugs": {
+    "url": "https://github.com/fiusdevelopment/matrixos/issues"
+  },
+  "homepage": "https://github.com/fiusdevelopment/matrixos#readme",
+  "dependencies": {
+    "@fiusdevelopment/map.db": "^1.0.2",
+    "axios": "^1.1.3",
+    "colors": "^1.4.0",
+    "figlet": "^1.5.2",
+    "readline-sync": "^1.4.10"
+  }
+}
