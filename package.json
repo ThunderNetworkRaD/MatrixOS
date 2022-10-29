@@ -1,11 +1,14 @@
 {
   "name": "matrixos",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "A new Operating System",
   "main": "index.js",
   "scripts": {
     "test": "npm start",
     "start": "node index.js"
+  },
+  "bin": {
+    "matrix": "./bin/index"
   },
   "repository": {
     "type": "git",
