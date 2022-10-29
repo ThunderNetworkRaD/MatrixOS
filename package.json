@@ -1,6 +1,6 @@
 {
   "name": "matrixos",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A new Operating System",
   "main": "index.js",
   "scripts": {
