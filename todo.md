@@ -2,7 +2,7 @@
 :white_mark_check:
 :x:
 
-0. :x: Login, Logout, CLI
+0. :white_mark_check: Login, Logout, CLI
 1. :x: Installer
 2. :x: Updater
 3. :x: App Loader
