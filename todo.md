@@ -1,8 +1,8 @@
 # TO DO
-:white_mark_check:
+:white_check_mark:
 :x:
 
-0. :white_mark_check: Login, Logout, CLI
+0. :white_check_mark: Login, Logout, CLI
 1. :x: Installer
 2. :x: Updater
 3. :x: App Loader
