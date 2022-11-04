@@ -22,10 +22,10 @@
   "homepage": "https://github.com/fiusdevelopment/matrixos#readme",
   "dependencies": {
     "@fiusdevelopment/map.db": "^1.0.2",
+    "@fiusdevelopment/readline": "^0.0.3",
     "@fiusdevelopment/std": "^0.0.5",
     "colors": "^1.4.0",
     "figlet": "^1.5.2",
-    "npm": "^8.19.3",
-    "readline-sync": "^1.4.10"
+    "npm": "^8.19.3"
   }
 }
