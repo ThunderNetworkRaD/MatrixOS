@@ -1,4 +1,4 @@
-const std = require('./std.js');
+const std = require('@fiusdevelopment/std');
 const security = require('./security.js');
 const home = require('./home.js')
 const MapDB = require('@fiusdevelopment/map.db');

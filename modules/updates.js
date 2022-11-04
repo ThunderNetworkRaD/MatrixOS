@@ -38,7 +38,7 @@ async function checkUpdate () {
     return new Promise((resolve, reject) => {
         try {
             console.log('Checking on web for the latest version')
-            require('axios').get('https://raw.githubusercontent.com/FIUSdevelopment/MatrixOS/main/package.json')
+              fetch('https://raw.githubusercontent.com/FIUSdevelopment/MatrixOS/main/package.json')
             .then(function (response) {
                 response = JSON.parse(JSON.stringify(response.data));
                 console.log(`The latest version is ${response.version}\nYou have currently installed ${require('../package.json').version}`);
@@ -67,7 +67,8 @@ async function checkUpdate () {
 } 
 
 async function checkWeb () {
-    return new Promise((resolve, reject) => {
+  checkUpdate().then(() => resolve('OK'));
+/*    return new Promise((resolve, reject) => {
         try {
             var axios = false;
     
@@ -94,6 +95,7 @@ async function checkWeb () {
             return reject('error');
         }
     })
+*/
 }
 
 module.exports = checkWeb;

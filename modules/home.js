@@ -1,4 +1,4 @@
-const std = require('./std.js');
+const std = require('@fiusdevelopment/std');
 const fs = require("fs");
 var colors = require('colors');
 
