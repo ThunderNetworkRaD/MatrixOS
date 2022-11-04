@@ -1,6 +1,6 @@
 {
   "name": "matrixos",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A new Operating System",
   "main": "index.js",
   "scripts": {
@@ -25,6 +25,7 @@
     "@fiusdevelopment/std": "^0.0.5",
     "colors": "^1.4.0",
     "figlet": "^1.5.2",
+    "npm": "^8.19.3",
     "readline-sync": "^1.4.10"
   }
 }

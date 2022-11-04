@@ -1,6 +1,4 @@
-const checkWeb = require('./modules/updates.js');
-//std.createCin(process.stdin, process.stdout);
-checkWeb()
+require('./modules/updates.js')()
 .then(() => {
     const MapDB = require('@fiusdevelopment/map.db');
     const cdb = new MapDB('credentials.db');

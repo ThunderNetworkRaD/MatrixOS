@@ -5,8 +5,7 @@ module.exports = {
     home: true,
     run: async (commands) => {
         commands.forEach((command) => {
-            command = require(`./${command}`);
-            console.log(`\n${String(command.name).red}:\nDescription: ${command.description}\nUsage: ${command.usage}\n`)
+            console.log(`\n${String(command.key).red}:\nDescription: ${command.value.description}\nUsage: ${command.value.usage}\n`)
         })
     }
 }

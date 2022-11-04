@@ -38,9 +38,9 @@ async function checkUpdate () {
     return new Promise((resolve, reject) => {
         try {
             console.log('Checking on web for the latest version')
-              fetch('https://raw.githubusercontent.com/FIUSdevelopment/MatrixOS/main/package.json')
-            .then(function (response) {
-                response = JSON.parse(JSON.stringify(response.data));
+            require('./web.js').getJson('https://raw.githubusercontent.com/FIUSdevelopment/MatrixOS/main/package.json')
+            .then((response) => {
+                
                 console.log(`The latest version is ${response.version}\nYou have currently installed ${require('../package.json').version}`);
                 if (response.version == require('../package.json').version) {
                     console.log('Your version is up to date');
@@ -66,36 +66,5 @@ async function checkUpdate () {
     })
 } 
 
-async function checkWeb () {
-  checkUpdate().then(() => resolve('OK'));
-/*    return new Promise((resolve, reject) => {
-        try {
-            var axios = false;
-    
-            console.log('Checking for Web-Required module')
-    
-            if (fs.existsSync('./node_modules/axios/package.json')) {
-                axios = true;
-                console.log('Module Found');
-                checkUpdate().then(() => resolve('OK'));
-            } else {
-                console.log('Module Not Found, installing')
-                exec('npm i axios', (error, stdout, stderr) => {                                                                            
-                    if (error) {
-                        console.error(`Error: ${error}`);
-                        return;
-                    }
-                    console.log('Module Installed');
-                    checkUpdate().then(() => resolve('OK'));
-                    if (stderr != "") console.error(`Error: ${stderr}`);
-                });
-            }
-        } catch (e) {
-            console.log(e)
-            return reject('error');
-        }
-    })
-*/
-}
 
-module.exports = checkWeb;
+module.exports = checkUpdate;

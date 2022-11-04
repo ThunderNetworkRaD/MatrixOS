@@ -8,18 +8,18 @@ const register = require('./register.js');
 async function login () {
     //if (mapdb.size() > 0) {        
         std.cin('Username:').then((username) => {
-            std.cin('Passworld:', true).then((passworld) => {
+            std.cin('Password:', true).then((password) => {
                 std.cin('Decryptation code:', true).then(async (pin) => {
                     const user = await mapdb.get(username);
-                    if (!user.username) {
+                    if (!user) {
                         console.log('No User Found')
                         return login()
                     }
                     if (user.decryptationCode === pin) {
-                        if (security.decrypt(user.passworld, pin) == passworld) {
+                        if (security.decrypt(user.password, pin) == password) {
                             home();
                         } else {
-                            console.log('Passworld not correct');
+                            console.log('Password not correct');
                             login()
                         }
                     } else {
