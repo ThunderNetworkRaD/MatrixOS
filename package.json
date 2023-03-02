@@ -1,31 +1,16 @@
 {
-  "name": "matrixos",
-  "version": "0.0.9",
-  "description": "A new Operating System",
-  "main": "index.js",
-  "scripts": {
-    "test": "npm start",
-    "start": "node index.js"
-  },
-  "bin": {
-    "matrix": "node index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fiusdevelopment/matrixos.git"
-  },
-  "author": "FIUS Development | Killer Boss Original - xxander2022",
-  "license": "SEE LICENSE IN LICENSE.txt",
-  "bugs": {
-    "url": "https://github.com/fiusdevelopment/matrixos/issues"
-  },
-  "homepage": "https://github.com/fiusdevelopment/matrixos#readme",
+  "name": "MatrixOS",
+  "version": "2023.03.02",
+  "description": "A New Operating System",
+  "main": "build/index.js",
+  "repository": "https://github.com/ThunderNetworkRaD/MatrixOS.git",
+  "author": "ThunderNetworkRaD | KillerBossOriginal",
+  "license": "SEE IN LICENSE.txt",
+  "private": false,
   "dependencies": {
-    "@fiusdevelopment/map.db": "^1.0.2",
-    "@fiusdevelopment/readline": "^0.0.3",
-    "@fiusdevelopment/std": "^0.0.5",
-    "colors": "^1.4.0",
-    "figlet": "^1.5.2",
-    "npm": "^8.19.3"
+    "glob": "^9.1.2",
+    "mit.db": "^2023.2.23-1",
+    "node-cin": "^2023.2.5",
+    "util": "^0.12.5"
   }
 }
